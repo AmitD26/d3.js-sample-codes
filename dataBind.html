@@ -7,53 +7,58 @@
 
 </head>
 <body>
-<!--  <p> This is my World </p>
-<p> </p><p> </p> -->
+<p> This is my World </p>
+<p> </p> <p></p>
     <script>
-    /*    var myData = ["Hello D3","Hello JavaScript","Hello World!"];
+        var myData = ["Hello D3","Hello JavaScript","Hello World!"];
 
          var p = d3.select("body")
                  .selectAll("p")
                  .data(myData)
-                 .text(function (d, i) {
-                     return d;
-                 });
-/
-         var myData = [1, 2, 3, 4, 5];
+             .text(function (d, i) {
+                 return d;
+             })
+             // .enter()
+             // .append("p")
+             //     .text(function (d, i) {
+             //         return d;
+             //     });
 
-          var p = d3.select("body")
-                    .selectAll("p")
-                    .data(myData) //only one paragraph element in the DOM.
-                    .text(function (d, i) {
-                         return d;
-                     });*
-           var s = d3.select("body")
-                 .selectAll("p")
-                 .data(myData)
-                 .enter() //Creates a selection with placeholder references for missing elements
+         // var myData = [1, 2, 3, 4, 5];
 
-              //   .append("span")
-                 .text(function(d) { return d + " "; });
-*/
-
-
-          var data = [4, 1, 6, 2, 8, 9];
-          var body = d3.select("body")
-                       .selectAll("span")
-                       .data(data)
-                       .enter().append("span")
-                       .style('color', function(d) {
-                           if (d % 2 === 0) {
-                               return "green";
-                           } else {
-                               return "red";
-                           }
-                       })
-                       .text(function(d) { return d + " "; });
+          // var p = d3.select("body")
+          //           .selectAll("p")
+          //           .data(myData) //only one paragraph element in the DOM.
+          //           .text(function (d, i) {
+          //                return d;
+          //            });*
+          //  var s = d3.select("body")
+          //        .selectAll("p")
+          //        .data(myData)
+          //        .enter() //Creates a selection with placeholder references for missing elements
+          //
+          //     //   .append("span")
+          //        .text(function(d) { return d + " "; });
 
 
-/*
-d3.csv("/data/eyet.csv", function(error, data) {
+
+          // var data = [4, 1, 6, 2, 8, 9];
+          // var body = d3.select("body")
+          //              .selectAll("span")
+          //              .data(data)
+          //              .enter().append("span")
+          //              .style('color', function(d) {
+          //                  if (d % 2 === 0) {
+          //                      return "green";
+          //                  } else {
+          //                      return "red";
+          //                  }
+          //              })
+          //              .text(function(d) { return d + " "; });
+
+
+
+d3.csv("data/eyet.csv", function(error, data) {
 
     d3.select("body")
         .selectAll("p")
@@ -72,7 +77,7 @@ d3.csv("/data/eyet.csv", function(error, data) {
         });
 
 });
-*/
+
 
     </script>
 </body>

@@ -17,28 +17,28 @@
 <body>
   <script>
 
-/*  d3.csv("/data/eyet.csv", function(data) {
-    console.log(data);
-      for (var i = 0; i < data.length; i++) {
-        //  console.log(data[i].Timestamp);
-      //   console.log(data[i].StimuliName);
-        //  console.log(data[0]);
-      }
-  });
-*/
-/*  d3.json("data/try.json", function(data) {
+ d3.csv("data/eyet.csv", function(data) {
+   // console.log(data);
+     for (var i = 0; i < data.length; i++) {
+        console.log(data[i].Timestamp);
+       console.log(data[i].StimuliName);
+        // console.log(data[0]);
+     }
+ });
+
+  d3.json("data/try.json", function(data) {
 
     console.log(data);
 });
 
 
-d3.tsv("/data/data.tsv", function(data) {
+d3.tsv("data/data.tsv", function(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i].x);
         console.log(data[i].y);
     }
 });
-*/
+
   </script>
 </body>
 </html>
